@@ -12,6 +12,7 @@ Conceitos
 -Snapshot : Instantâneo (fotográfico) - são cópias dos arquivos que estão na area de cena em um determinado momento
 -Commit : Tira um instantaneo da area de cena, ou seja, copia estes arquivos
 - Tracked files : Arquivos rastreados. São os arquivos que foram adicionados a area de cena, e dos quais o comando "git commit" tira instantâneos. Os demais permanecem como estão. O comando "git status" apresenta quais os arquivos estão sendo rastreados.
+  Caso um arquivo rastreado tenha sofrido um "commit", deve ser novamente adicionado (git add arquivo) para que o novo commit registre as alterações.
 
 
 
