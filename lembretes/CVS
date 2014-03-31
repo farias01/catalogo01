@@ -1,10 +1,17 @@
+"Ao invés de se aprofundar no mar de comandos do Git, use estes exemplos elementares para dar os primeiros passos. Apesar de sua simplicidade, cada um deles são muito úteis. Na verdade, no meu primeiro mês com o Git, nunca precisei ir além das informações deste capítulo."
+(Livro Magia Git, cap. 2)
+
+
 Conceitos
 
--Branch :
--Checkout :
--Master :
--Origin :
--Staging Area :
+-Branch : Ramo das versões do projeto
+-Checkout : Volta no "tempo" criando um novo ramo (realidade alternativa)
+-Master : É o ramo principal de um projeto
+-Origin : É outro tipo de ramo
+-Staging Area : Podemos chamar esta area de intermediária ou area de cena
+-Snapshot : Instantâneo (fotográfico) - são cópias dos arquivos que estão na area de cena em um determinado momento
+-Commit : Tira um instantaneo da area de cena, ou seja, copia estes arquivos
+- Tracked files : Arquivos rastreados. São os arquivos que foram adicionados a area de cena, e dos quais o comando "git commit" tira instantâneos. Os demais permanecem como estão. O comando "git status" apresenta quais os arquivos estão sendo rastreados.
 
 
 
@@ -18,10 +25,13 @@ git remote add origin https://www.github.com/farias01/Catalogo01  #Variante da a
 
 git push -u origin master  #Atualiza repositório origem
 			   # origin - repositorio remoto ; master - ramo local
+			   # -u  -memoriza o push
 
 git push https://www.github.com/farias01/Catalogo01 #Atualiza repositório
 
-git push # Atualiza repositório estando definida a origem
+git push https://github.com/Catalogo-de-Livros/catalogo01
+
+git push # Atualiza repositório estando memorizada a sequência com a opção -u
 
 git add arquivo/diretório  #Adiciona Arquivo ou Diretório a staging area
 
@@ -35,4 +45,6 @@ git status  #Obtém status do diretório/projeto
 
 git pull origin master # Recebe Cópia do Repositório de Origem (remoto)
 
+git branch nome_um # Cria um branch novo com o nome de nome_um
 
+git branch  # Exibe os branchs existentes
