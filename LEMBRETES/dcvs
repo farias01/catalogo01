@@ -7,7 +7,7 @@ Conceitos
 -Branch : Ramo das versões do projeto
 -Checkout : Volta no "tempo" criando um novo ramo (realidade alternativa)
 -Master : É o ramo principal de um projeto
--Origin : É outro tipo de ramo
+-Origin : É o nome usual do servidor remoto
 -Staging Area : Podemos chamar esta area de intermediária ou area de cena
 -Snapshot : Instantâneo (fotográfico) - são cópias dos arquivos que estão na area de cena em um determinado momento
 -Commit : Tira um instantaneo da area de cena, ou seja, copia estes arquivos
@@ -49,3 +49,7 @@ git pull origin master # Recebe Cópia do Repositório de Origem (remoto)
 git branch nome_um # Cria um branch novo com o nome de nome_um
 
 git branch  # Exibe os branchs existentes
+
+git remote add [shortname] [url] # Associa um nome curto com a url remota.
+Exemplo: git remote add pb git://github.com/paulboone/ticgit.git
+
