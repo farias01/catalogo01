@@ -1,0 +1,47 @@
+-Declaração simples de classe :
+
+class MinhaClasse {
+    // atributos, constructor, e 
+    // declarações de metódos
+}
+
+-A classe necessita estar documentada :
+   // Comentário
+
+-A classe possui variáveis :
+
+    Variáveis membro em uma classe — são denominadas de campos ou atributos.
+    Variáveis internas a um método ou bloco de código - são denominadas de variáveis locais.
+    Variáveis em declarações de métodos — são denominadas de parâmetros.
+
+Declaração de Campo ou atributo :
+<modificador de acesso> <tipo> <nome do atributo> ;
+exemplo : public int numero ;
+
+Declaração de Parâmetro :
+<tipo> <nome do atributo> ;
+exemplo : int numero ;
+
+-Declaração de Métodos
+<modificador de acesso> <tipo de retorno> <nome do método> ( <parâmetro> , <parâmetro> ) {  <implementação do método>; return <valor>; }
+
+exemplo :
+public int aciona() {
+        return cadence;
+    }
+
+-Convenções :
+    a primeira letra de uma classe deve ser maiúscula, e
+    a primeira (ou única) palavra em um método deve ser um verbo com primeira letra minuscula.
+    a segunda palavra (se houver) e seguintes, em um método, podem ser adjetivos, substântivos, etc, e devem  iniciar por letra maiúscula.
+
+-Construtor :
+É um tipo especial de método utilizado para inicializar uma variável do tipo classe.
+Observação : Algumas pessoas não consideram o construtor como um método, pois é utilizado quando a classe ainda não existe.
+
+-Declaração de Construtor
+<modificador de acesso> <nome do construtor igual ao nome da classe> ( <parâmetro> , <parâmetro>) { <implementação do construtor>; }
+Observações : Um construtor copia exatamente as letras do nome da classe a que pertence, distinguindo minusculas de maiusculas.
+ 
+    
+
