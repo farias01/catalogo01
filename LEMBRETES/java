@@ -42,6 +42,10 @@ Observação : Algumas pessoas não consideram o construtor como um método, poi
 -Declaração de Construtor
 <modificador de acesso> <nome do construtor igual ao nome da classe> ( <parâmetro> , <parâmetro>) { <implementação do construtor>; }
 Observações : Um construtor copia exatamente as letras do nome da classe a que pertence, distinguindo minusculas de maiusculas.
+
+-Passagem de Parâmetros :
+Os parâmetros são passados por valor. Se um tipo Referência de Dado (objeto p/exemplo) é passado, a referência é mantida e seus Atributos
+podem ser alterados se houver permissão de acesso.
  
     
 
