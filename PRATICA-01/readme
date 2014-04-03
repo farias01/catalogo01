@@ -2,3 +2,6 @@ O objetivo desta prática é treinar a construção de uma classe simples denomi
 de ficha (fichas são afixadas nos livros de uma biblioteca) e preenche-la.
 Estas informações serão utilizadas posteriormente no projeto "Catalogo-de-livros".
 Este micro projeto é totalmente funcional aderindo a metodologia TDD ou Test Drive Development.
+
+A estrutura do código original foi melhorada e corrigida e passou para o diretório PRATICA-01-A/
+
