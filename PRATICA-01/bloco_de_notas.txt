@@ -1,0 +1,20 @@
+BLOCO DE NOTAS
+
+- O objetivo deste BLOCO DE NOTAS é registrar algumas idéias que surgem "na hora".
+
+- Pode-se alterar a meta da PRATICA-01 para "fazer uma ficha e testa-la", ao invés de fazer uma mini-biblioteca simplificada completa.
+  Isto esta mais de acordo com a metodologia de programação orientada a objetos (e também de acordo com a metodologia de programação estruturada).
+  Vale lembrar do antigo principio do "Divide and conquer" (do latim  "Divide et impera"), ou seja, dividimos um problema grande e 
+  provavelmente complexo em partes pequenas com a finalidade de superar mais facilmente as dificuldades oferecidas pelas pequenas partes (Ou seja, 
+  transforma-mos esforço em tempo). Pegar uma parte do problema é mais adequado que minimiza-lo (fazer uma biblioteca "pequena").
+
+- A estrutura da ficha (número de campos) não define diretamente a forma com que é armazenada, pois podemos agrupar as informações da ficha posteriormente, isso traz a seguinte vantagem: As informações agrupadas ficam padronizadas, o que nem sempre (e provavelmente não) ocorre com um "operador" humano dando entrada direta.
+
+- Os nomes PRATICA-O1-a , PRATICA-O1-b , PRATICA-O1-c , etc. ficam reservados ao aperfeiçoamento do programa de criar uma ficha e testa-la.
+  Estes programas de preenchimento de fichas bibliográficas após testados irão gerar o(s) modelo(s) para a confecção de outros tipos de fichas     	utilizadas no "Gerenciador de Acervo da biblioteca", tais como fichas de leitores, fichas de empréstimo, etc.
+
+- A PRATICA-02 , PRATICA-02-a , PRATICA-O2-b , etc. será utilizada para confeccionar a classe arquivo, ou seja, a classe que irá armazenar (e    	recuperar) um
+  determinado tipo de ficha, como por exemplo, fichas bibliograficas. Pode armazenar também (em arquivos distintos) fichas de leitores, fichas de   	empréstimo, etc.
+
+- O teste das fichas sera feito em uma classe separada da parte "Main" do programa, com a finalidade de reaproveita-lo para outros testes, como por
+  exemplo, preencher as fichas antes de arquiva-las, durante o teste do arquivo.

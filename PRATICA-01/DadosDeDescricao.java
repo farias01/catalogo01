@@ -24,25 +24,6 @@ Um método interessante para esta classe é a cópia, pois facilita a edição d
 - Farias(usuário github/farias01)
 */  
 
-/* Como a classe original estava muito grande, dificultando o trabalho, separei a declaração dos atributos e denominei de "DadosDescricao" enquanto a classe "Descricao" é uma classe filha que implementara os métodos.
-
-- Farias(usuário github/farias01)
-*/  
-
-/* Como a classe original estava muito grande, dificultando o trabalho, separei a declaração dos atributos e denominei de "DadosDescricao" enquanto a classe "Descricao" é uma classe filha que implementara os métodos.
-
-- Farias(usuário github/farias01)
-*/  
-
-/* Inicialmente escrevi apenas o método escreveAutor(autor) e leAutor(), isto visa a facilitar correções que por ventura sejam necessárias
-durante o teste. Depois só na base do "cut and paste" preenchemos a classe (e a respectiva classe de teste).
-Já foi possivel constatar que uma das vantagens de "separar" os dados em "DadosDescricao" (melhor seria escrever DadosDeDescricao) dos 
-métodos (Descricao) é abrir os dois arquivos em paralelo no editor de textos ao invés de ficar rolando um mesmo arquivo para "cima e para baixo". 
-Na realidade eu não estou cometendo uma heresia em termos de oop, simplesmente usei a herança para facilitar a vida. Inicialmente "separei" os dados dos métodos (notar que o separei está entre aspas) apenas para evitar blocos muito grandes, contudo a outra vantagem foi poder ver os arquivos em paralelo. 
-
-- Farias(usuário github/farias01)
-*/  
-
 /* Alterei o nome da classe de DadosDescricao para DadosDeDescricao
 - Farias(usuário github/farias01)
 */
@@ -55,27 +36,27 @@ da "Metainformação de desenvolvimento" inclusive as tuas próprias. - Separe c
 /***************************************               Código              **********************************************************/
 
 // Para compatibilidade com sistemas de arquivos que não suportam utf-8 mantemos os nomes das classes restritos aos caracteres ASCII
-// Apenas implementa os métodos que controlam os atributos da classe DadosDescricao
+// Foram utilizados classes wrapper para facilitar. Ex. Int e String.
 
-class Descricao extends DadosDeDescricao {
-	
-// Método escreveAutor. Serve para preencher o nome do autor na ficha.
-// Pergunta: um método que retorna void é finalizado com return ?
-// Resposta: Não necessáriamente. Eu contudo recomendo que seja utilizado o return pois é boa pratica de programação. Note que mais de um 
-// return pode ser utilizado para finalizar o método.
+class DadosDeDescricao {
+	protected String autor;
+	protected String autor_aliases; // Serve para adicionar igualmente co-autores.
+	protected Double id_autor_principal; // número de identificação do autor principal. Sugere metodo de preenchimento automatico do autor e 							//	derivadoe
+	protected String titulo; // Titulo da obra
+	protected String subtitulo; // Para o caso de coleções. Em certas coleções da mir havia (e há ...?) sub sub volumes.	
+	protected String titulo_original; // Para obras traduzidas
+	protected String ficha_resumo; // Usa a barra invertida para separar linhas
+	protected Int volume; // Para o caso de coleções ou multiplos volumes
+	protected Int edicao;  // Não é prevista uma "edição especial" ...
+	protected String editora; // Pode ser divida com contrabarra em editora original e a da tradução. ??dúvida??	
+	protected String tradutor; // Neste caso é melhor não misturar com o autor.
+	protected Int num_exemplar; // Para o caso de se possuir mais de um exemplar. numero do exemplar.
+	protected Int formato; // Para distinguir formato eletronico do impresso
+	protected String acompanhamento; // Para informar se uma midia tipo CD, DVD, poster, etc. acompanha o impresso e sua descrição.
+	protected String observacoes; // Informações adicionais
+	protected Int data_publicacao;  // Data da publicação
+}	
 
-	void escreveAutor(String autor) {
-		DadosDeDescricao.autor = autor;
-		return;
-	}
-// Método leAutor. Serve para ler o nome do autor na ficha.
 
-	String leAutor() {
-		return DadosDeDescricao.autor;
-	}
-
-
-
-}
 
 	

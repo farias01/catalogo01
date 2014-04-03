@@ -1,0 +1,16 @@
+// Aqui não se cria uma instância, e sim usa-se a classe diretamente.
+
+class TestaFichaDeLivro {
+
+// Implementa o método testa()
+  void testa() {
+	
+        // Testa Método escreveAutor da FichaDeLivro.
+	FichaDeLivro.escreveAutor("Jules Verne"); 
+		
+        // Testa Método leAutor da FichaDeLivro.
+	System.out.println(FichaDeLivro.leAutor()); 
+	
+	return;  //finaliza o metodo testa();	
+  	}
+}

@@ -20,8 +20,8 @@ da "Metainformação de desenvolvimento" inclusive as tuas próprias. - Separe c
 
 class FichaCatalografica {
 	private Descricao descricao;
-	private PontoDeAcesso ponto-de-acesso;
-	private NumeroDeChamada numero-de-chamada;
+	private PontoDeAcesso ponto_de_acesso;
+	private NumeroDeChamada numero_de_chamada;
 }	
 
 
